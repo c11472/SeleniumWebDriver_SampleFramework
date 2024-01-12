@@ -1,0 +1,15 @@
+WebDriver driver = new FirefoxDriver();
+WebDriver driver = new ChromeDriver();
+//Maximize browser
+driver.manage().window().maximize();
+
+//Screen image capture
+File src =((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+Files.copy(src,new File("./Shreenshots/LaunchAppImg1.png"));
+// ExtentReports
+
+
+
+//Log Automation
+
+
